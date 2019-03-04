@@ -2,16 +2,16 @@
 An exercise that summarizes what you have learned in this Session.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Maddie Sorensen.
 """
 ########################################################################
-# TODO: 1.
+# Done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   Write code that accomplishes the following (and ONLY the following),
 #   in the order listed:
 #
@@ -43,3 +43,17 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   As always, COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+window=rg.TurtleWindow()
+simpleturtle=rg.SimpleTurtle('turtle')
+simpleturtle.pen=rg.Pen('Blue',1)
+simpleturtle.left(90)
+simpleturtle.forward(200)
+simpleturtle.pen_up()
+simpleturtle.go_to(rg.Point(100, -40))
+simpleturtle.pen_down()
+simpleturtle.pen=rg.Pen('Green',10)
+simpleturtle.backward(150)
+window.close_on_mouse_click()
+
+
